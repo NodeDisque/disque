@@ -1,0 +1,14 @@
+{
+  "name": "disque",
+  "version": "1.0.0",
+  "description": "A redis-based job queue that never sucks",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "luin <i@zihua.li>",
+  "license": "MIT",
+  "dependencies": {
+    "ioredis": "^1.0.2"
+  }
+}
