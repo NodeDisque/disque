@@ -4,7 +4,8 @@
   "description": "A redis-based job queue that never sucks",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "NODE_ENV=test DEBUG=disque:* mocha",
+    "test:cov": "NODE_ENV=test DEBUG=disque:* node ./node_modules/istanbul/lib/cli.js cover --preserve-comments ./node_modules/mocha/bin/_mocha -- -R spec"
   },
   "author": {
     "name": "luin",
@@ -33,6 +34,8 @@
   },
   "devDependencies": {
     "chai": "^2.3.0",
+    "codeclimate-test-reporter": "0.0.4",
+    "istanbul": "^0.3.13",
     "mocha": "^2.2.4",
     "server-destroy": "^1.0.0",
     "sinon": "^1.14.1"

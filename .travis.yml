@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+- '0.11.16'
+- '0.12'
+- 'iojs'
+
+script:
+- npm run test:cov
+
+addons:
+  code_climate:
+    repo_token: dc8a92b1d9b3efdc3f2173943d07b4f54f7970448a7055f0d9cc051eff8a93e2
+
+after_success:
+- cat ./coverage/lcov.info | ./node_modules/.bin/codeclimate
