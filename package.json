@@ -1,6 +1,6 @@
 {
   "name": "disque",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A redis-based job queue that never sucks",
   "main": "index.js",
   "scripts": {
