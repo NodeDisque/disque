@@ -6,9 +6,28 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "luin <i@zihua.li>",
+  "author": {
+    "name": "luin",
+    "email": "i@zihua.li",
+    "url": "http://zihua.li"
+  },
+  "keywords": [
+    "disque",
+    "cluster",
+    "queue",
+    "message"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/luin/disque.git"
+  },
   "license": "MIT",
   "dependencies": {
-    "ioredis": "^1.0.2"
+    "ioredis": "^1.1.4",
+    "lodash": "^3.8.0"
+  },
+  "engines": {
+    "node": ">= 0.11.16",
+    "iojs": ">= 1.0.0"
   }
 }
